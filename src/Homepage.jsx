@@ -1,1 +1,0 @@
-export const Homepage = () => <h1>Welcome Home, Santa!</h1>

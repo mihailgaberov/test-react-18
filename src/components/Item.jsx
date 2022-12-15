@@ -1,0 +1,1 @@
+export const Item = ({item}) => <h1>Item: ${item}</h1>
