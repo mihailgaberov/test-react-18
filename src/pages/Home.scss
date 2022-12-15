@@ -1,5 +1,14 @@
-header {
-    height: 200px;
+.home {
     color: black;
-    background-color: paleturquoise;
+    
+    header {
+        height: 200px;
+        color: black;
+        background-color: paleturquoise;
+    }
+    
+    footer {
+        height: 100px;
+        color: rebeccapurple;
+    }
 }
