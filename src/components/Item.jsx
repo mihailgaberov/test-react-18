@@ -1,1 +1,6 @@
-export const Item = ({item}) => <h1>Item: ${item}</h1>
+import './Item.scss'
+export const Item = ({item}) => {
+    console.log(">>> item: ", item)
+
+    return (<>Item: ${item}</>)
+}

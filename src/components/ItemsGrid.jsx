@@ -1,7 +1,12 @@
 import { Item } from './Item'
+import './ItemsGrid.scss'
+export const ItemsGrid = ({items}) => {
 
-export const ItemsGrid = ({items}) => (
-    items.map(item => {
-        <div><Item item={item} /></div>
-    })
-);
+    return (
+        <ul className="grid">
+            {items.map(item => (
+                <li className='item'><Item item={item} /></li>
+            ))}
+        </ul>
+    );
+};
