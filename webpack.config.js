@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
+    publicPath: "/",
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, "build"),
   },
   plugins: [
@@ -34,6 +35,10 @@ module.exports = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: "asset/resource",
+      }
     ],
   },
   resolve: {
