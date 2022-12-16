@@ -1,1 +1,8 @@
-export const HeadBanner = () => <h1>The most wanted toy banner!</h1>
+import bannerSrc from '../../assets/images/toy-sale-banner.png'
+
+import './HeadBanner.scss'
+export const HeadBanner = () => (
+    <section className="head-banner">
+        <img src={bannerSrc} alt='Header banner' />
+    </section>
+)
