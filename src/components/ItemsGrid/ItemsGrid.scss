@@ -1,7 +1,11 @@
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto);*/
   list-style-type: none;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
